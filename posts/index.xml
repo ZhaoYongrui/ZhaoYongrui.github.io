@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on My New Hugo Site</title>
+    <link>http://example.org/posts/</link>
+    <description>Recent content in Posts on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 05 Oct 2021 11:38:42 +0800</lastBuildDate><atom:link href="http://example.org/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My First Post</title>
+      <link>http://example.org/posts/my-first-post/</link>
+      <pubDate>Tue, 05 Oct 2021 11:38:42 +0800</pubDate>
+      
+      <guid>http://example.org/posts/my-first-post/</guid>
+      <description>这是我的第一篇博客 我遇到一些问题 1.想把博客文件不放在C盘的根目录下。
+解决：发现还是把文件放在C盘的根目录下更好，访问和修改更方便，执行命令也更方便。
+2.命令语言不规范。
+例如：hugo server-D，server和D之间缺少空格，导致命令无法执行。
+3.博客各级标题编辑不规范。
+例如：一级标题，二级标题#后面的空格必须要有，否则#作为文本显示。
+4.Git Bash里面的命令不规范。
+例如：cd ..命令，cd和..之间的空格是必须要有的。</description>
+    </item>
+    
+  </channel>
+</rss>
