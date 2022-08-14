@@ -24,15 +24,21 @@
     var CONFIG = {"hostname":"zyrblog.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":true,"preload":true},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Zyr Blog">
-<meta property="og:url" content="http://zyrblog.com/archives/2022/index.html">
+  <meta name="description" content="HTML and css difficulties">
+<meta property="og:type" content="article">
+<meta property="og:title" content="html+css">
+<meta property="og:url" content="http://zyrblog.com/html+css.html">
 <meta property="og:site_name" content="Zyr Blog">
+<meta property="og:description" content="HTML and css difficulties">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2022-08-14T13:42:21.000Z">
+<meta property="article:modified_time" content="2022-08-14T15:15:33.023Z">
 <meta property="article:author" content="Zhao Yongrui">
+<meta property="article:tag" content="html">
+<meta property="article:tag" content="css">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://zyrblog.com/archives/2022/">
+<link rel="canonical" href="http://zyrblog.com/html+css.html">
 
 
 <script id="page-configurations">
@@ -40,12 +46,12 @@
   CONFIG.page = {
     sidebar: "",
     isHome : false,
-    isPost : false,
+    isPost : true,
     lang   : 'zh-CN'
   };
 </script>
 
-  <title>归档 | Zyr Blog</title>
+  <title>html+css | Zyr Blog</title>
   
 
 
@@ -201,90 +207,138 @@
         <div class="content-wrap">
           
 
-          <div class="content archive">
+          <div class="content post posts-expand">
             
 
+    
   
   
-  
-  <div class="post-block">
-    <div class="posts-collapse">
-      <div class="collection-title">
-        <span class="collection-header">嗯..! 目前共计 3 篇日志。 继续努力。</span>
-      </div>
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://zyrblog.com/html+css.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/rui.jpg">
+      <meta itemprop="name" content="Zhao Yongrui">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Zyr Blog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          html+css
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2022-08-14 21:42:21 / 修改时间：23:15:33" itemprop="dateCreated datePublished" datetime="2022-08-14T21:42:21+08:00">2022-08-14</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/web-front/" itemprop="url" rel="index"><span itemprop="name">web front</span></a>
+                </span>
+            </span>
+
+          
+            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span>
+            <div class="post-description">HTML and css difficulties</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-    <div class="collection-year">
-      <span class="collection-header">2022</span>
-    </div>
+        <h1 id="meta"><a href="#meta" class="headerlink" title="meta"></a>meta</h1><p>head里面</p>
+<p><code>&lt;meta charset=&quot;UTF-8&quot;&gt;</code></p>
+<p>防止中文乱码</p>
+<p><code>&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,initial-scale=1.0&quot;&gt;</code></p>
+<p>页面自适应</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;meta name=&quot;keywords&quot; content=&quot;……&quot;&gt;</span><br><span class="line">&lt;meta name=&quot;description&quot; content=&quot;……&quot;&gt;</span><br><span class="line">&lt;meta name=&quot;author&quot; content=&quot;……&quot;&gt;</span><br></pre></td></tr></table></figure>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+<p>搜索引擎优化</p>
+<p><code> &lt;meta http-equiv=&quot;refresh&quot; content=&quot;5;http://...&quot;&gt;</code></p>
+<p>页面自动跳转</p>
+<h1 id="style"><a href="#style" class="headerlink" title="style"></a>style</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;style type=&quot;text/css&quot;&gt;</span><br><span class="line">   h1 &#123;   &#125;</span><br><span class="line">   p &#123;    &#125;</span><br><span class="line">   a &#123;    &#125;</span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure>
 
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2022-08-14T21:42:21+08:00"
-              content="2022-08-14">
-          08-14
-        </time>
-      </div>
+<p>设置样式</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;style media=&quot;print&quot;&gt;</span><br><span class="line"></span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure>
 
-      <div class="post-title">
-          <a class="post-title-link" href="/html+css.html" itemprop="url">
-            <span itemprop="name">html+css</span>
-          </a>
-      </div>
+<p>针对打印模式的样式</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;style media=&quot;screen and (min-width:512px) and (max-width:1024px) &quot;&gt;</span><br><span class="line"></span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure>
 
-    </header>
-  </article>
+<p>屏幕浏览时在512~1024px时的样式</p>
+<h1 id="文本样式设置"><a href="#文本样式设置" class="headerlink" title="文本样式设置"></a>文本样式设置</h1><p><code> text-align: center;</code></p>
+<p>水平对齐方式</p>
+<p><code> margin-left: 60%;</code></p>
+<p>左外边距</p>
+<p><code> text-indent: 32px;</code></p>
+<p>设置缩进（32px  空两个字）</p>
+<p><code> font-size: 16px;</code></p>
+<p>设置字体尺寸</p>
+<p><code> line-height: 32px;</code></p>
+<p>设置行高</p>
+<h1 id="图像样式设置"><a href="#图像样式设置" class="headerlink" title="图像样式设置"></a>图像样式设置</h1><p><code> background-image: url(&quot;../img/abc.png&quot;)</code></p>
+<p>添加背景图片</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">img&#123;</span><br><span class="line">   position: absolute;/*绝对位置*/</span><br><span class="line">   left: 50%;/*距浏览器左边一半*/</span><br><span class="line">   margin-left: -181px;/*左移181个像素*/</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2022-08-11T21:23:21+08:00"
-              content="2022-08-11">
-          08-11
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/useMarkdown.html" itemprop="url">
-            <span itemprop="name">useMarkdown</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2022-08-11T21:14:05+08:00"
-              content="2022-08-11">
-          08-11
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/BolgBuild.html" itemprop="url">
-            <span itemprop="name">BolgBuild</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
+<p>设置图片样式</p>
+<h1 id="link"><a href="#link" class="headerlink" title="link"></a>link</h1><p><code>&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;style.css&quot;&gt;</code></p>
+<p><code>&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; media=&quot;······&quot; href=&quot;······&quot;&gt;</code></p>
+<p>链接外部样式表</p>
+<p><code>&lt;link rel=&quot;icon&quot; type=&quot;image/x-icon&quot; href=&quot;······&quot;&gt;</code></p>
+<p>链接网站图表</p>
+<h1 id="base"><a href="#base" class="headerlink" title="base"></a>base</h1><p><code>&lt;base href=&quot;http://······&quot; target=&quot;_blank&quot;&gt;</code></p>
+<p>指定相对URL的解析基准(只影响相对路径)</p>
 
     </div>
-  </div>
-  
-  
-  
 
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/html/" rel="tag"># html</a>
+              <a href="/tags/css/" rel="tag"># css</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/useMarkdown.html" rel="prev" title="useMarkdown">
+      <i class="fa fa-chevron-left"></i> useMarkdown
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
   
 
 
@@ -337,6 +391,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#meta"><span class="nav-number">1.</span> <span class="nav-text">meta</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#style"><span class="nav-number">2.</span> <span class="nav-text">style</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%96%87%E6%9C%AC%E6%A0%B7%E5%BC%8F%E8%AE%BE%E7%BD%AE"><span class="nav-number">3.</span> <span class="nav-text">文本样式设置</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%9B%BE%E5%83%8F%E6%A0%B7%E5%BC%8F%E8%AE%BE%E7%BD%AE"><span class="nav-number">4.</span> <span class="nav-text">图像样式设置</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#link"><span class="nav-number">5.</span> <span class="nav-text">link</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#base"><span class="nav-number">6.</span> <span class="nav-text">base</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 

@@ -62,4 +62,57 @@
         <tag>BolgWrite</tag>
       </tags>
   </entry>
+  <entry>
+    <title>html+css</title>
+    <url>/html+css.html</url>
+    <content><![CDATA[<h1 id="meta"><a href="#meta" class="headerlink" title="meta"></a>meta</h1><p>head里面</p>
+<p><code>&lt;meta charset=&quot;UTF-8&quot;&gt;</code></p>
+<p>防止中文乱码</p>
+<p><code>&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,initial-scale=1.0&quot;&gt;</code></p>
+<p>页面自适应</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;meta name=&quot;keywords&quot; content=&quot;……&quot;&gt;</span><br><span class="line">&lt;meta name=&quot;description&quot; content=&quot;……&quot;&gt;</span><br><span class="line">&lt;meta name=&quot;author&quot; content=&quot;……&quot;&gt;</span><br></pre></td></tr></table></figure>
+
+<p>搜索引擎优化</p>
+<p><code> &lt;meta http-equiv=&quot;refresh&quot; content=&quot;5;http://...&quot;&gt;</code></p>
+<p>页面自动跳转</p>
+<h1 id="style"><a href="#style" class="headerlink" title="style"></a>style</h1><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;style type=&quot;text/css&quot;&gt;</span><br><span class="line">   h1 &#123;   &#125;</span><br><span class="line">   p &#123;    &#125;</span><br><span class="line">   a &#123;    &#125;</span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure>
+
+<p>设置样式</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;style media=&quot;print&quot;&gt;</span><br><span class="line"></span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure>
+
+<p>针对打印模式的样式</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;style media=&quot;screen and (min-width:512px) and (max-width:1024px) &quot;&gt;</span><br><span class="line"></span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure>
+
+<p>屏幕浏览时在512~1024px时的样式</p>
+<h1 id="文本样式设置"><a href="#文本样式设置" class="headerlink" title="文本样式设置"></a>文本样式设置</h1><p><code> text-align: center;</code></p>
+<p>水平对齐方式</p>
+<p><code> margin-left: 60%;</code></p>
+<p>左外边距</p>
+<p><code> text-indent: 32px;</code></p>
+<p>设置缩进（32px  空两个字）</p>
+<p><code> font-size: 16px;</code></p>
+<p>设置字体尺寸</p>
+<p><code> line-height: 32px;</code></p>
+<p>设置行高</p>
+<h1 id="图像样式设置"><a href="#图像样式设置" class="headerlink" title="图像样式设置"></a>图像样式设置</h1><p><code> background-image: url(&quot;../img/abc.png&quot;)</code></p>
+<p>添加背景图片</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">img&#123;</span><br><span class="line">   position: absolute;/*绝对位置*/</span><br><span class="line">   left: 50%;/*距浏览器左边一半*/</span><br><span class="line">   margin-left: -181px;/*左移181个像素*/</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>设置图片样式</p>
+<h1 id="link"><a href="#link" class="headerlink" title="link"></a>link</h1><p><code>&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;style.css&quot;&gt;</code></p>
+<p><code>&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; media=&quot;······&quot; href=&quot;······&quot;&gt;</code></p>
+<p>链接外部样式表</p>
+<p><code>&lt;link rel=&quot;icon&quot; type=&quot;image/x-icon&quot; href=&quot;······&quot;&gt;</code></p>
+<p>链接网站图表</p>
+<h1 id="base"><a href="#base" class="headerlink" title="base"></a>base</h1><p><code>&lt;base href=&quot;http://······&quot; target=&quot;_blank&quot;&gt;</code></p>
+<p>指定相对URL的解析基准(只影响相对路径)</p>
+]]></content>
+      <categories>
+        <category>web front</category>
+      </categories>
+      <tags>
+        <tag>html</tag>
+        <tag>css</tag>
+      </tags>
+  </entry>
 </search>
