@@ -44,6 +44,74 @@
 <p>链接网站图表</p>
 <h1 id="base"><a href="#base" class="headerlink" title="base"></a>base</h1><p><code>&lt;base href=&quot;http://······&quot; target=&quot;_blank&quot;&gt;</code></p>
 <p>指定相对URL的解析基准(只影响相对路径)</p>
+<h1 id="script"><a href="#script" class="headerlink" title="script"></a>script</h1><p>头部</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">        document.write(&quot;I love you!&quot;);</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+
+<p>内嵌脚本语句</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;script type=&quot;text/javascript&quot; src=&quot;······.js&quot;&gt; &lt;/script&gt;</span><br></pre></td></tr></table></figure>
+
+<p>载入外部脚本文件</p>
+<p>不能同时内嵌和载入外部脚本</p>
+<p><code>&lt;script type=&quot;text/javascript&quot; src=&quot;······.js&quot; defer&gt; &lt;/script&gt;</code></p>
+<p>defer 延迟脚本执行，只能用于外部脚本文件</p>
+<p>async属性用于异步执行外部脚本文件</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;noscript&gt;</span><br><span class="line">&lt;/noscript&gt;</span><br></pre></td></tr></table></figure>
+
+<p>当浏览器不支持javascript时显示该标签内的内容</p>
+<h1 id="换行符"><a href="#换行符" class="headerlink" title="换行符"></a>换行符</h1><p><code>&lt;br&gt;</code></p>
+<h1 id="字符实体"><a href="#字符实体" class="headerlink" title="字符实体"></a>字符实体</h1><p>&amp;#60；——&lt;</p>
+<p>&amp;#62；——&gt;</p>
+<h1 id="等宽字体"><a href="#等宽字体" class="headerlink" title="等宽字体"></a>等宽字体</h1><p>适合编程</p>
+<h1 id="所见即所得"><a href="#所见即所得" class="headerlink" title="所见即所得"></a>所见即所得</h1><p><code>&lt;pre&gt;       &lt;/pre&gt;</code></p>
+<h1 id="语义化"><a href="#语义化" class="headerlink" title="语义化"></a>语义化</h1><p><code>&lt;code&gt;      &lt;/code&gt;</code></p>
+<p><code>&lt;var&gt;       &lt;/var&gt;</code>变量</p>
+<p><code>&lt;kbd&gt;       &lt;/kbd&gt;</code>输入</p>
+<p><code>&lt;samp&gt;     &lt;/samp&gt;</code>输出</p>
+<h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><p><code>&lt;q&gt;   &lt;/q&gt;</code>加上双引号</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;blockquote&gt;</span><br><span class="line"></span><br><span class="line">&lt;/blockquote&gt;</span><br></pre></td></tr></table></figure>
+
+<p>缩进引用</p>
+<p><code>&lt;cite&gt;  &lt;/cite&gt;</code>标题</p>
+<p><code>&lt;abbr title=&quot;  &quot;&gt;       &lt;/abbr&gt;</code>简称</p>
+<p><code>&lt;dfn&gt;   &lt;/dfn&gt;</code>术语</p>
+<p><code>&lt;address&gt;       &lt;/address&gt;</code>联系信息</p>
+<p><code>&lt;ruby&gt;   &lt;rp&gt;  &lt;/rp&gt;&lt;rt&gt;    &lt;/rt&gt;&lt;rp&gt;  &lt;rp&gt;&lt;/ruby&gt;</code>注音</p>
+<p><code>&lt;bdo dir=&quot;rtl&quot;&gt;     &lt;/bdo&gt;</code>文字从右往左</p>
+<h1 id="格式化"><a href="#格式化" class="headerlink" title="格式化"></a>格式化</h1><p><code>&lt;strong&gt;    &lt;/strong&gt;</code>粗体、强调重要性</p>
+<p><code>&lt;b&gt;    &lt;/b&gt;</code>粗体</p>
+<p><code>&lt;em&gt;  &lt;/em&gt;</code>斜体、强调</p>
+<p><code>&lt;i&gt;     &lt;/i&gt;</code>斜体</p>
+<p><code>&lt;del&gt;   &lt;/del&gt;</code>删除线</p>
+<p><code>&lt;ins&gt;   &lt;/ins&gt;</code>下划线</p>
+<p><code>&lt;s&gt;     &lt;/s&gt;</code>中间线、不正确的内容</p>
+<p><code>&lt;u&gt;     &lt;/u&gt;</code>下划线、拼写错误的单词、汉语中的专有名词</p>
+<p><code>&lt;mark&gt;    &lt;/mark&gt;</code>标记文本（默认标黄）</p>
+<p><code>&lt;sub&gt;    &lt;/sub&gt;</code>下标</p>
+<p><code>&lt;sub&gt;    &lt;/sub&gt;</code>上标</p>
+<p><code>&lt;small&gt;   &lt;/small&gt;</code>字体变小</p>
+<h1 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h1><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;ul&gt;</span><br><span class="line">   &lt;li&gt;  &lt;/li&gt;</span><br><span class="line">&lt;/ul&gt;</span><br></pre></td></tr></table></figure>
+
+<p>无序列表</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;ol type=&quot;I&quot;  start=&quot;2&quot;S  reversed&gt;</span><br><span class="line">   &lt;li&gt;   &lt;/li&gt;</span><br><span class="line">&lt;ol&gt;</span><br></pre></td></tr></table></figure>
+
+<p>有序列表</p>
+<p><code>list-style-type: square</code>    css设置无序列表样式</p>
+<p><code>list-style-image: url(&quot;   &quot;) </code>    css设置无序列表样式</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;ol&gt;</span><br><span class="line">   &lt;ul&gt;</span><br><span class="line">       &lt;li&gt;   &lt;/li&gt;</span><br><span class="line">   &lt;/ul&gt;</span><br><span class="line">&lt;/ol&gt;</span><br></pre></td></tr></table></figure>
+
+<p>嵌套列表</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;dl&gt;</span><br><span class="line">   &lt;dt&gt;术语&lt;/dt&gt;</span><br><span class="line">   &lt;dd&gt;描述&lt;dd&gt;</span><br><span class="line">&lt;/dl&gt;</span><br></pre></td></tr></table></figure>
+
+<p>定义列表</p>
+<h1 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h1><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;table&gt;</span><br><span class="line">     &lt;caption&gt;标题&lt;/caption&gt;</span><br><span class="line">     &lt;colgroup&gt;</span><br><span class="line">           &lt;col style=&quot;background:red&quot;&gt;</span><br><span class="line">           &lt;col span=&quot;2&quot; style=&quot;green&quot;&gt; &lt;!--跨两列--&gt;</span><br><span class="line">     &lt;/colgroup&gt;</span><br><span class="line">     &lt;tr&gt;</span><br><span class="line">        &lt;th&gt;表头&lt;/th&gt;</span><br><span class="line">     &lt;/tr&gt;</span><br><span class="line">     &lt;tr&gt;</span><br><span class="line">        &lt;td colspan=&quot;4&quot;&gt;数据&lt;/td&gt;  &lt;!--跨四列--&gt;</span><br><span class="line">        &lt;td rowspan=&quot;3&quot;&gt;数据&lt;/td&gt;  &lt;!--跨三行--&gt;</span><br><span class="line">     &lt;/tr&gt;</span><br><span class="line">&lt;/table&gt;</span><br></pre></td></tr></table></figure>
+
+<p><code>padding:5px;</code>  css设置内边距</p>
+<p><code>border: 1px  solid  black;</code> css设置边框</p>
+<p><code>border-collapse: collapse;</code> 边框合并 </p>
+<p><code>background: grey;</code>背景颜色</p>
+<p><code>color: white;</code>字体颜色</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;thead&gt;</span><br><span class="line"></span><br><span class="line">&lt;/thead&gt;</span><br><span class="line">&lt;tbody&gt;</span><br><span class="line"></span><br><span class="line">&lt;/tbody&gt;</span><br><span class="line">&lt;tfoot&gt;</span><br><span class="line"></span><br><span class="line">&lt;/tfoot&gt;</span><br></pre></td></tr></table></figure>
+
 ]]></content>
       <categories>
         <category>web front</category>
