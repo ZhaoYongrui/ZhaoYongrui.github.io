@@ -112,6 +112,56 @@
 <p><code>color: white;</code>字体颜色</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;thead&gt;</span><br><span class="line"></span><br><span class="line">&lt;/thead&gt;</span><br><span class="line">&lt;tbody&gt;</span><br><span class="line"></span><br><span class="line">&lt;/tbody&gt;</span><br><span class="line">&lt;tfoot&gt;</span><br><span class="line"></span><br><span class="line">&lt;/tfoot&gt;</span><br></pre></td></tr></table></figure>
 
+<h1 id="表单"><a href="#表单" class="headerlink" title="表单"></a>表单</h1><p>post提交重要数据</p>
+<p>get参数包含到URL中</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;form action=&quot;....php&quot; method=&quot;post&quot;&gt;</span><br><span class="line">   名字：&lt;input type=&quot;text&quot; name=&quot;name&quot;&gt;&lt;br&gt;&lt;br&gt;</span><br><span class="line">   密码：&lt;input type=&quot;password&quot; name=&quot;password&quot;&gt;&lt;br&gt;&lt;br&gt;</span><br><span class="line">   &lt;button type=&quot;submit&quot;&gt;提交&lt;/button&gt;</span><br><span class="line">   &lt;button type=&quot;reset&quot;&gt;重写&lt;/button&gt;</span><br><span class="line">   &lt;button type=&quot;submit&quot; formmethod=&quot;get&quot;&gt;GET&lt;/button&gt;</span><br><span class="line"> &lt;/form&gt;</span><br></pre></td></tr></table></figure>
+
+<p><code>&lt;form autocomplete=&quot;off&quot;&gt;</code>   不自动填充提示</p>
+<p><code>&lt;input autocomplete=&quot;on&quot;&gt;</code>  自动填充提示</p>
+<p><code>&lt;form target=&quot;_blank&quot;&gt;</code> 新标签页打开</p>
+<p><code>&lt;input value=&quot;1&quot; &gt;</code> 默认值</p>
+<p><code>&lt;input autofocus&gt;</code> 自动聚焦到该输入框</p>
+<p><code>&lt;input disabled&gt;</code> 禁用元素</p>
+<p><code>&lt;input readonly&gt;</code> 禁止修改</p>
+<p><code>&lt;label&gt;名字：&lt;input type=&quot;text&quot; name=&quot;name&quot;&gt;&lt;label&gt;</code></p>
+<p> 增强交互性</p>
+<p><code>&lt;label for=&quot;name&quot;&gt;名字&lt;/label&gt;&lt;input type=&quot;text&quot; name=&quot;name&quot; id=&quot;name&quot;&gt;</code>for对应id  实现与上一个相同功能</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;fieldset&gt;</span><br><span class="line">   &lt;input&gt;  </span><br><span class="line">&lt;/fieldset&gt;</span><br></pre></td></tr></table></figure>
+
+<p>对表单划分</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;fieldset&gt;</span><br><span class="line">  &lt;legend&gt;基本信息&lt;/legend&gt;</span><br><span class="line">&lt;/fieldset&gt;</span><br></pre></td></tr></table></figure>
+
+<p>lengend作为第一个元素进行说明</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;select name=&quot;sex&quot;&gt;</span><br><span class="line">    &lt;option value=&quot;male&quot;&gt;男&lt;/option&gt;</span><br><span class="line">    &lt;option value=&quot;female&quot;&gt;女&lt;/option&gt;</span><br><span class="line">&lt;/select&gt;</span><br></pre></td></tr></table></figure>
+
+<p>下拉选项框</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;select&gt;</span><br><span class="line">  &lt;optgroup label=&quot;  &quot;&gt;</span><br><span class="line">    &lt;option&gt;   &lt;/option&gt;</span><br><span class="line">    ......</span><br><span class="line">  &lt;/optgroup&gt;</span><br><span class="line">&lt;/select&gt;</span><br></pre></td></tr></table></figure>
+
+<p>optgroup下拉选项框分组</p>
+<h1 id="input元素的属性"><a href="#input元素的属性" class="headerlink" title="input元素的属性"></a>input元素的属性</h1><p><code>&lt;input type=&quot;submit&quot; value=&quot;提交&quot;&gt;</code>实现button功能</p>
+<p>类似的：type&#x3D;”reset”  type&#x3D;”button”</p>
+<p><code>&lt;input type=&quot;radio&quot; name=&quot;sex&quot; value=&quot;male&quot;&gt;男</code></p>
+<p><code>&lt;input type=&quot;radio&quot; name=&quot;sex&quot; value=&quot;female&quot;&gt;</code>女</p>
+<p>单选框</p>
+<p><code>&lt;input type=&quot;checkbox&quot; name=&quot;arr[]&quot; value=&quot;a&quot;&gt;A  </code></p>
+<p><code>&lt;input type=&quot;checkbox&quot; name=&quot;arr[]&quot; value=&quot;b&quot;&gt;B</code></p>
+<p>复选框</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;input type=&quot;time&quot; name=&quot;time&quot;&gt;时间</span><br><span class="line">&lt;input type=&quot;time&quot; name=&quot;date&quot;&gt;日期</span><br><span class="line">month 年月  week 星期  datetime-local 本地日期和时间</span><br></pre></td></tr></table></figure>
+
+<p>时间和日期</p>
+<p><code>&lt;input type=&quot;search&quot; name=&quot;search&quot;&gt;</code> 搜索框</p>
+<p><code>&lt;input type=&quot;color&quot; name=&quot;color&quot;&gt;</code> 颜色选择框</p>
+<p><code>&lt;input type=&quot;image&quot; src=&quot;  &quot; alt=&quot; &quot;&gt;</code> 图像按钮</p>
+<p><code>&lt;input type=&quot;hidden&quot; value=&quot; &quot; disabled&gt;</code> 隐藏元素</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;form action=&quot;&quot; method=&quot;post&quot; enctype=&quot;multipart/form-data&quot;&gt;</span><br><span class="line">  &lt;input type=&quot;hidden&quot; name=&quot;MAX_FILE_SIZE&quot; value=&quot;1024&quot;&gt;</span><br><span class="line">  &lt;input type=&quot;file&quot; name=&quot;file&quot; accept=&quot;image/*&quot; multiple&gt;</span><br><span class="line">&lt;/form&gt;</span><br></pre></td></tr></table></figure>
+
+<p>上传文件</p>
+<h1 id="限定输入类型"><a href="#限定输入类型" class="headerlink" title="限定输入类型"></a>限定输入类型</h1><p><code>&lt;input type=&quot;number&quot; name=&quot;age&quot;&gt;</code> 限定数字类型</p>
+<p><code>&lt;input type=&quot;number&quot; name=&quot;age&quot; min=&quot;1&quot; max=&quot;100&quot; step=&quot;1&quot;&gt;</code> 限定数字范围和不长</p>
+<p><code>&lt;input type=&quot;range&quot; name=&quot; &quot; value=&quot;1&quot; min=&quot;1&quot; max=&quot;10000&quot; step=&quot;100&quot;&gt;</code> 数值滚动条</p>
+<p><code>&lt;input type=&quot;email&quot; name=&quot;email&quot; pattern=&quot;正则&quot;&gt;</code> 邮箱</p>
+<p><code>&lt;input type=&quot;tel&quot; name=&quot;tel&quot; pattern=&quot;正则&quot;&gt;</code> 电话</p>
+<p><code>&lt;input type=&quot;url&quot; name=&quot;url&quot; pattern=&quot;正则&quot;&gt;</code> 网址</p>
 ]]></content>
       <categories>
         <category>web front</category>
