@@ -162,6 +162,20 @@
 <p><code>&lt;input type=&quot;email&quot; name=&quot;email&quot; pattern=&quot;正则&quot;&gt;</code> 邮箱</p>
 <p><code>&lt;input type=&quot;tel&quot; name=&quot;tel&quot; pattern=&quot;正则&quot;&gt;</code> 电话</p>
 <p><code>&lt;input type=&quot;url&quot; name=&quot;url&quot; pattern=&quot;正则&quot;&gt;</code> 网址</p>
+<h1 id="输入提示"><a href="#输入提示" class="headerlink" title="输入提示"></a>输入提示</h1><p><code>&lt;input type=&quot;number&quot; name=&quot;age&quot; placeholder=&quot;&quot;&gt;</code> 占位提示</p>
+<h1 id="强制输入"><a href="#强制输入" class="headerlink" title="强制输入"></a>强制输入</h1><p><code>&lt;input type=&quot;  &quot; name=&quot;  &quot; required&gt;</code> 输入信息后才能提交</p>
+<h1 id="输入框的长度"><a href="#输入框的长度" class="headerlink" title="输入框的长度"></a>输入框的长度</h1><p><code>&lt;input type=&quot;number&quot; name=&quot;age&quot; size=&quot;30&quot;&gt;</code></p>
+<h1 id="限制输入字符数量"><a href="#限制输入字符数量" class="headerlink" title="限制输入字符数量"></a>限制输入字符数量</h1><p><code>&lt;input type=&quot;number&quot; name=&quot;age&quot; maxlength=&quot;22&quot;&gt;</code> 最多输入数</p>
+<h1 id="输入框下拉选项"><a href="#输入框下拉选项" class="headerlink" title="输入框下拉选项"></a>输入框下拉选项</h1><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;input type=&quot;text&quot; name=&quot;site&quot; list=&quot;urllist&quot;&gt;</span><br><span class="line">&lt;datalist id=&quot;urllist&quot;&gt;</span><br><span class="line">      &lt;option value=&quot;  &quot;&gt;选项一&lt;/option&gt;</span><br><span class="line">&lt;/datalist&gt;</span><br></pre></td></tr></table></figure>
+
+<h1 id="显示输出"><a href="#显示输出" class="headerlink" title="显示输出"></a>显示输出</h1><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">0&lt;input type=&quot;range&quot; id=&quot;a&quot; value=&quot;50&quot; min=&quot;0&quot; max=&quot;100&quot;&gt;100+</span><br><span class="line">&lt;input type=&quot;number&quot; id=&quot;b&quot; value=&quot;50&quot;&gt;=</span><br><span class="line">&lt;output name=&quot;x&quot; for=&quot;a b&quot;&gt;100&lt;/output&gt;</span><br></pre></td></tr></table></figure>
+
+<p>output输出</p>
+<h1 id="多行文本输入"><a href="#多行文本输入" class="headerlink" title="多行文本输入"></a>多行文本输入</h1><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;textarea name=&quot;say&quot; rows=&quot;5&quot; cols=&quot;30&quot; wrap=&quot;off&quot;&gt;       context   </span><br><span class="line">&lt;/textarea&gt;</span><br></pre></td></tr></table></figure>
+
+<p>wrop&#x3D;”hard” 提交换行符</p>
+<p>worp&#x3D;”off”不会自动换行</p>
+<p>worp&#x3D;”soft”不提交换行符</p>
 ]]></content>
       <categories>
         <category>web front</category>
