@@ -172,6 +172,20 @@
       </tags>
   </entry>
   <entry>
+    <title>BolgBuild</title>
+    <url>/BolgBuild.html</url>
+    <content><![CDATA[<h1 id="Hexo-Github搭建个人博客"><a href="#Hexo-Github搭建个人博客" class="headerlink" title="Hexo+Github搭建个人博客"></a>Hexo+Github搭建个人博客</h1><p><a href="https://www.bilibili.com/video/BV1mU4y1j72n?spm_id_from=333.337.search-card.all.click&vd_source=ff3c4b00386234806258d66498119762">搭建博客视频教程</a></p>
+<h1 id="对个人博客进行美化和配置"><a href="#对个人博客进行美化和配置" class="headerlink" title="对个人博客进行美化和配置"></a>对个人博客进行美化和配置</h1><p><a href="https://www.bilibili.com/video/BV16W411t7mq?spm_id_from=333.337.search-card.all.click&vd_source=ff3c4b00386234806258d66498119762">美化配置博客视频教程</a></p>
+]]></content>
+      <categories>
+        <category>Bolg</category>
+      </categories>
+      <tags>
+        <tag>BolgBuild</tag>
+        <tag>BolgDeploy</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>useMarkdown</title>
     <url>/useMarkdown.html</url>
     <content><![CDATA[<h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><p>一个#，后空格</p>
@@ -217,20 +231,6 @@
       </categories>
       <tags>
         <tag>BolgWrite</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>BolgBuild</title>
-    <url>/BolgBuild.html</url>
-    <content><![CDATA[<h1 id="Hexo-Github搭建个人博客"><a href="#Hexo-Github搭建个人博客" class="headerlink" title="Hexo+Github搭建个人博客"></a>Hexo+Github搭建个人博客</h1><p><a href="https://www.bilibili.com/video/BV1mU4y1j72n?spm_id_from=333.337.search-card.all.click&vd_source=ff3c4b00386234806258d66498119762">搭建博客视频教程</a></p>
-<h1 id="对个人博客进行美化和配置"><a href="#对个人博客进行美化和配置" class="headerlink" title="对个人博客进行美化和配置"></a>对个人博客进行美化和配置</h1><p><a href="https://www.bilibili.com/video/BV16W411t7mq?spm_id_from=333.337.search-card.all.click&vd_source=ff3c4b00386234806258d66498119762">美化配置博客视频教程</a></p>
-]]></content>
-      <categories>
-        <category>Bolg</category>
-      </categories>
-      <tags>
-        <tag>BolgBuild</tag>
-        <tag>BolgDeploy</tag>
       </tags>
   </entry>
 </search>
