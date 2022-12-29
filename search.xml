@@ -208,6 +208,30 @@
       </tags>
   </entry>
   <entry>
+    <title>jiqixuexi</title>
+    <url>/jiqixuexi.html</url>
+    <content><![CDATA[<h1 id="机器学习"><a href="#机器学习" class="headerlink" title="机器学习"></a>机器学习</h1>]]></content>
+      <categories>
+        <category>AI</category>
+      </categories>
+      <tags>
+        <tag>AI</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>R-CNNs</title>
+    <url>/R-CNNs.html</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>object detection</category>
+      </categories>
+      <tags>
+        <tag>R-CNN</tag>
+        <tag>Fast R-CNN</tag>
+        <tag>Faster R-CNN</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>BolgBuild</title>
     <url>/BolgBuild.html</url>
     <content><![CDATA[<h1 id="Hexo-Github搭建个人博客"><a href="#Hexo-Github搭建个人博客" class="headerlink" title="Hexo+Github搭建个人博客"></a>Hexo+Github搭建个人博客</h1><p><a href="https://www.bilibili.com/video/BV1mU4y1j72n?spm_id_from=333.337.search-card.all.click&vd_source=ff3c4b00386234806258d66498119762">搭建博客视频教程</a></p>
@@ -267,30 +291,6 @@
       </categories>
       <tags>
         <tag>BolgWrite</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>R-CNNs</title>
-    <url>/R-CNNs.html</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>object detection</category>
-      </categories>
-      <tags>
-        <tag>R-CNN</tag>
-        <tag>Fast R-CNN</tag>
-        <tag>Faster R-CNN</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>jiqixuexi</title>
-    <url>/jiqixuexi.html</url>
-    <content><![CDATA[<h1 id="机器学习"><a href="#机器学习" class="headerlink" title="机器学习"></a>机器学习</h1>]]></content>
-      <categories>
-        <category>AI</category>
-      </categories>
-      <tags>
-        <tag>AI</tag>
       </tags>
   </entry>
 </search>
