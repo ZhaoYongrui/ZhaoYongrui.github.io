@@ -176,6 +176,28 @@
 <p>wrop&#x3D;”hard” 提交换行符</p>
 <p>worp&#x3D;”off”不会自动换行</p>
 <p>worp&#x3D;”soft”不提交换行符</p>
+<h1 id="网页架构"><a href="#网页架构" class="headerlink" title="网页架构"></a>网页架构</h1><p><code>&lt;section&gt;</code> 全文档</p>
+<p><code>&lt;article&gt;</code> 文章中具体内容</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;section&gt; </span><br><span class="line"> &lt;details open&gt;</span><br><span class="line">   &lt;summary&gt;  &lt;/summary&gt;</span><br><span class="line">   &lt;p&gt;  &lt;/p&gt;</span><br><span class="line">  &lt;/details&gt;</span><br><span class="line"> &lt;/section&gt;</span><br></pre></td></tr></table></figure>
+
+<h1 id="图片映射"><a href="#图片映射" class="headerlink" title="图片映射"></a>图片映射</h1><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;img src=&quot; &quot; alt=&quot; &quot; usemap=&quot;#book&quot;&gt;</span><br><span class="line">&lt;map name=&quot;book&quot;&gt;</span><br><span class="line">  &lt;area shape=&quot;circle&quot; coords=&quot;x,y,radius&quot; alt=&quot; &quot; href=&quot; &quot; target=&quot;_blank&quot;&gt;</span><br><span class="line">  &lt;area shape=&quot;poly&quot; coords=&quot;x,y,x,y,x,y...&quot; alt=&quot; &quot; href=&quot; &quot; target=&quot; &quot;&gt;多边形</span><br><span class="line">  &lt;area shape=&quot;rect&quot; coords=&quot;x,y,x,y&quot; alt=&quot; &quot; href=&quot; &quot; target=&quot;_blank&quot;&gt;矩形</span><br><span class="line">&lt;/map&gt;</span><br></pre></td></tr></table></figure>
+
+<h1 id="图像适配"><a href="#图像适配" class="headerlink" title="图像适配"></a>图像适配</h1><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;picture&gt;</span><br><span class="line"> &lt;source media=&quot;(min-width: 1024px)&quot; srcset=&quot;big.jpg&quot;&gt;</span><br><span class="line"> &lt;source media=&quot;(min-width: 512px)&quot; srcset=&quot;small.jpg&quot;&gt;</span><br><span class="line"> &lt;img src=&quot;normal.jpg&quot; alt=&quot;图片&quot; style=&quot;width:auto;&quot;&gt;</span><br><span class="line">&lt;picture&gt;</span><br></pre></td></tr></table></figure>
+
+<h1 id="插图"><a href="#插图" class="headerlink" title="插图"></a>插图</h1><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;figure&gt;</span><br><span class="line"> &lt;img src=&quot; &quot; alt=&quot; &quot;&gt;</span><br><span class="line"> &lt;figcaption&gt;   &lt;/figcaption&gt;</span><br><span class="line">&lt;/figure&gt;</span><br></pre></td></tr></table></figure>
+
+<h1 id="嵌入视频"><a href="#嵌入视频" class="headerlink" title="嵌入视频"></a>嵌入视频</h1><p><code>&lt;video src=&quot; &quot; width=&quot; &quot; height=&quot; &quot; controls autoplay muted &gt;  &lt;/video&gt;</code></p>
+<p><code>&lt;video src=&quot; &quot; width=&quot; &quot; height=&quot; &quot; controls preload=&quot;auto&quot;&gt;  &lt;/video&gt;</code>    预加载</p>
+<p><code>&lt;video src= &quot; &quot; width=&quot; &quot; heigth=&quot; &quot; controls poster=&quot;....jpg&quot;&gt;   &lt;/video&gt;</code>  封面</p>
+<p><code>&lt;video src=&quot; &quot; width=&quot; &quot; heigth=&quot; &quot; controls loop&gt;</code> 循环</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;video src=&quot; &quot; width=&quot; &quot; controls&gt;</span><br><span class="line"> &lt;track src=&quot; ....vtt&quot; srclang=&quot;zh&quot; label=&quot;中文字幕&quot; kind=&quot;subtitles&quot; default&gt; 添加字幕</span><br><span class="line">&lt;/video&gt;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;video width=&quot; &quot; controls&gt;</span><br><span class="line"> &lt;source src=&quot; &quot; type=&quot;video/mp4&quot;&gt;</span><br><span class="line"> &lt;source src=&quot; &quot; type=&quot;video/ogv&quot;&gt;</span><br><span class="line"> &lt;source src=&quot; &quot; type=&quot;video/webm&quot;&gt;</span><br><span class="line"> 备用视频</span><br><span class="line">&lt;/video&gt;</span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="嵌入音频"><a href="#嵌入音频" class="headerlink" title="嵌入音频"></a>嵌入音频</h1><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;audio src=&quot; &quot; controls&gt;</span><br><span class="line"> </span><br><span class="line">&lt;/audio&gt;</span><br></pre></td></tr></table></figure>
+
 ]]></content>
       <categories>
         <category>web front</category>
@@ -245,6 +267,30 @@
       </categories>
       <tags>
         <tag>BolgWrite</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>R-CNNs</title>
+    <url>/R-CNNs.html</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>object detection</category>
+      </categories>
+      <tags>
+        <tag>R-CNN</tag>
+        <tag>Fast R-CNN</tag>
+        <tag>Faster R-CNN</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>jiqixuexi</title>
+    <url>/jiqixuexi.html</url>
+    <content><![CDATA[<h1 id="机器学习"><a href="#机器学习" class="headerlink" title="机器学习"></a>机器学习</h1>]]></content>
+      <categories>
+        <category>AI</category>
+      </categories>
+      <tags>
+        <tag>AI</tag>
       </tags>
   </entry>
 </search>
