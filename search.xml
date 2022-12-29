@@ -1,6 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>MachineLearning</title>
+    <url>/MachineLearning.html</url>
+    <content><![CDATA[<h1 id="感知机"><a href="#感知机" class="headerlink" title="感知机"></a>感知机</h1><script type="math/tex; mode=display">
+f(x)=sign(w · x+b)</script><script type="math/tex; mode=display">
+sign(x)=\left\{
+\begin{matrix}
+ +1, x\geqslant0 \\
+ -1,x<0
+\end{matrix}
+\right.</script><h1 id="K近邻法"><a href="#K近邻法" class="headerlink" title="K近邻法"></a>K近邻法</h1><p>三要素：距离度量、k值的选择、分类决策规则</p>
+<p>构造kd树、利用kd树进行最近邻搜索</p>
+]]></content>
+      <tags>
+        <tag>ML</tag>
+        <tag>AI</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>html+css</title>
     <url>/html+css.html</url>
     <content><![CDATA[<h1 id="meta"><a href="#meta" class="headerlink" title="meta"></a>meta</h1><p>head里面</p>
@@ -9,33 +27,28 @@
 <p><code>&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,initial-scale=1.0&quot;&gt;</code></p>
 <p>页面自适应</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;meta name=&quot;keywords&quot; content=&quot;……&quot;&gt;</span><br><span class="line">&lt;meta name=&quot;description&quot; content=&quot;……&quot;&gt;</span><br><span class="line">&lt;meta name=&quot;author&quot; content=&quot;……&quot;&gt;</span><br></pre></td></tr></table></figure>
-
 <p>搜索引擎优化</p>
-<p><code> &lt;meta http-equiv=&quot;refresh&quot; content=&quot;5;http://...&quot;&gt;</code></p>
+<p><code>&lt;meta http-equiv=&quot;refresh&quot; content=&quot;5;http://...&quot;&gt;</code></p>
 <p>页面自动跳转</p>
 <h1 id="style"><a href="#style" class="headerlink" title="style"></a>style</h1><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;style type=&quot;text/css&quot;&gt;</span><br><span class="line">   h1 &#123;   &#125;</span><br><span class="line">   p &#123;    &#125;</span><br><span class="line">   a &#123;    &#125;</span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure>
-
 <p>设置样式</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;style media=&quot;print&quot;&gt;</span><br><span class="line"></span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure>
-
 <p>针对打印模式的样式</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;style media=&quot;screen and (min-width:512px) and (max-width:1024px) &quot;&gt;</span><br><span class="line"></span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure>
-
 <p>屏幕浏览时在512~1024px时的样式</p>
-<h1 id="文本样式设置"><a href="#文本样式设置" class="headerlink" title="文本样式设置"></a>文本样式设置</h1><p><code> text-align: center;</code></p>
+<h1 id="文本样式设置"><a href="#文本样式设置" class="headerlink" title="文本样式设置"></a>文本样式设置</h1><p><code>text-align: center;</code></p>
 <p>水平对齐方式</p>
-<p><code> margin-left: 60%;</code></p>
+<p><code>margin-left: 60%;</code></p>
 <p>左外边距</p>
-<p><code> text-indent: 32px;</code></p>
+<p><code>text-indent: 32px;</code></p>
 <p>设置缩进（32px  空两个字）</p>
-<p><code> font-size: 16px;</code></p>
+<p><code>font-size: 16px;</code></p>
 <p>设置字体尺寸</p>
-<p><code> line-height: 32px;</code></p>
+<p><code>line-height: 32px;</code></p>
 <p>设置行高</p>
-<h1 id="图像样式设置"><a href="#图像样式设置" class="headerlink" title="图像样式设置"></a>图像样式设置</h1><p><code> background-image: url(&quot;../img/abc.png&quot;)</code></p>
+<h1 id="图像样式设置"><a href="#图像样式设置" class="headerlink" title="图像样式设置"></a>图像样式设置</h1><p><code>background-image: url(&quot;../img/abc.png&quot;)</code></p>
 <p>添加背景图片</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">img&#123;</span><br><span class="line">   position: absolute;/*绝对位置*/</span><br><span class="line">   left: 50%;/*距浏览器左边一半*/</span><br><span class="line">   margin-left: -181px;/*左移181个像素*/</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
 <p>设置图片样式</p>
 <h1 id="link"><a href="#link" class="headerlink" title="link"></a>link</h1><p><code>&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;style.css&quot;&gt;</code></p>
 <p><code>&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; media=&quot;······&quot; href=&quot;······&quot;&gt;</code></p>
@@ -46,17 +59,14 @@
 <p>指定相对URL的解析基准(只影响相对路径)</p>
 <h1 id="script"><a href="#script" class="headerlink" title="script"></a>script</h1><p>头部</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">        document.write(&quot;I love you!&quot;);</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
-
 <p>内嵌脚本语句</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;script type=&quot;text/javascript&quot; src=&quot;······.js&quot;&gt; &lt;/script&gt;</span><br></pre></td></tr></table></figure>
-
 <p>载入外部脚本文件</p>
 <p>不能同时内嵌和载入外部脚本</p>
 <p><code>&lt;script type=&quot;text/javascript&quot; src=&quot;······.js&quot; defer&gt; &lt;/script&gt;</code></p>
 <p>defer 延迟脚本执行，只能用于外部脚本文件</p>
 <p>async属性用于异步执行外部脚本文件</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;noscript&gt;</span><br><span class="line">&lt;/noscript&gt;</span><br></pre></td></tr></table></figure>
-
 <p>当浏览器不支持javascript时显示该标签内的内容</p>
 <h1 id="换行符"><a href="#换行符" class="headerlink" title="换行符"></a>换行符</h1><p><code>&lt;br&gt;</code></p>
 <h1 id="字符实体"><a href="#字符实体" class="headerlink" title="字符实体"></a>字符实体</h1><p>&amp;#60；——&lt;</p>
@@ -69,7 +79,6 @@
 <p><code>&lt;samp&gt;     &lt;/samp&gt;</code>输出</p>
 <h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><p><code>&lt;q&gt;   &lt;/q&gt;</code>加上双引号</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;blockquote&gt;</span><br><span class="line"></span><br><span class="line">&lt;/blockquote&gt;</span><br></pre></td></tr></table></figure>
-
 <p>缩进引用</p>
 <p><code>&lt;cite&gt;  &lt;/cite&gt;</code>标题</p>
 <p><code>&lt;abbr title=&quot;  &quot;&gt;       &lt;/abbr&gt;</code>简称</p>
@@ -90,32 +99,25 @@
 <p><code>&lt;sub&gt;    &lt;/sub&gt;</code>上标</p>
 <p><code>&lt;small&gt;   &lt;/small&gt;</code>字体变小</p>
 <h1 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h1><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;ul&gt;</span><br><span class="line">   &lt;li&gt;  &lt;/li&gt;</span><br><span class="line">&lt;/ul&gt;</span><br></pre></td></tr></table></figure>
-
 <p>无序列表</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;ol type=&quot;I&quot;  start=&quot;2&quot;S  reversed&gt;</span><br><span class="line">   &lt;li&gt;   &lt;/li&gt;</span><br><span class="line">&lt;ol&gt;</span><br></pre></td></tr></table></figure>
-
 <p>有序列表</p>
 <p><code>list-style-type: square</code>    css设置无序列表样式</p>
-<p><code>list-style-image: url(&quot;   &quot;) </code>    css设置无序列表样式</p>
+<p><code>list-style-image: url(&quot;   &quot;)</code>    css设置无序列表样式</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;ol&gt;</span><br><span class="line">   &lt;ul&gt;</span><br><span class="line">       &lt;li&gt;   &lt;/li&gt;</span><br><span class="line">   &lt;/ul&gt;</span><br><span class="line">&lt;/ol&gt;</span><br></pre></td></tr></table></figure>
-
 <p>嵌套列表</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;dl&gt;</span><br><span class="line">   &lt;dt&gt;术语&lt;/dt&gt;</span><br><span class="line">   &lt;dd&gt;描述&lt;dd&gt;</span><br><span class="line">&lt;/dl&gt;</span><br></pre></td></tr></table></figure>
-
 <p>定义列表</p>
 <h1 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h1><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;table&gt;</span><br><span class="line">     &lt;caption&gt;标题&lt;/caption&gt;</span><br><span class="line">     &lt;colgroup&gt;</span><br><span class="line">           &lt;col style=&quot;background:red&quot;&gt;</span><br><span class="line">           &lt;col span=&quot;2&quot; style=&quot;green&quot;&gt; &lt;!--跨两列--&gt;</span><br><span class="line">     &lt;/colgroup&gt;</span><br><span class="line">     &lt;tr&gt;</span><br><span class="line">        &lt;th&gt;表头&lt;/th&gt;</span><br><span class="line">     &lt;/tr&gt;</span><br><span class="line">     &lt;tr&gt;</span><br><span class="line">        &lt;td colspan=&quot;4&quot;&gt;数据&lt;/td&gt;  &lt;!--跨四列--&gt;</span><br><span class="line">        &lt;td rowspan=&quot;3&quot;&gt;数据&lt;/td&gt;  &lt;!--跨三行--&gt;</span><br><span class="line">     &lt;/tr&gt;</span><br><span class="line">&lt;/table&gt;</span><br></pre></td></tr></table></figure>
-
 <p><code>padding:5px;</code>  css设置内边距</p>
 <p><code>border: 1px  solid  black;</code> css设置边框</p>
 <p><code>border-collapse: collapse;</code> 边框合并 </p>
 <p><code>background: grey;</code>背景颜色</p>
 <p><code>color: white;</code>字体颜色</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;thead&gt;</span><br><span class="line"></span><br><span class="line">&lt;/thead&gt;</span><br><span class="line">&lt;tbody&gt;</span><br><span class="line"></span><br><span class="line">&lt;/tbody&gt;</span><br><span class="line">&lt;tfoot&gt;</span><br><span class="line"></span><br><span class="line">&lt;/tfoot&gt;</span><br></pre></td></tr></table></figure>
-
 <h1 id="表单"><a href="#表单" class="headerlink" title="表单"></a>表单</h1><p>post提交重要数据</p>
 <p>get参数包含到URL中</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;form action=&quot;....php&quot; method=&quot;post&quot;&gt;</span><br><span class="line">   名字：&lt;input type=&quot;text&quot; name=&quot;name&quot;&gt;&lt;br&gt;&lt;br&gt;</span><br><span class="line">   密码：&lt;input type=&quot;password&quot; name=&quot;password&quot;&gt;&lt;br&gt;&lt;br&gt;</span><br><span class="line">   &lt;button type=&quot;submit&quot;&gt;提交&lt;/button&gt;</span><br><span class="line">   &lt;button type=&quot;reset&quot;&gt;重写&lt;/button&gt;</span><br><span class="line">   &lt;button type=&quot;submit&quot; formmethod=&quot;get&quot;&gt;GET&lt;/button&gt;</span><br><span class="line"> &lt;/form&gt;</span><br></pre></td></tr></table></figure>
-
 <p><code>&lt;form autocomplete=&quot;off&quot;&gt;</code>   不自动填充提示</p>
 <p><code>&lt;input autocomplete=&quot;on&quot;&gt;</code>  自动填充提示</p>
 <p><code>&lt;form target=&quot;_blank&quot;&gt;</code> 新标签页打开</p>
@@ -127,34 +129,28 @@
 <p> 增强交互性</p>
 <p><code>&lt;label for=&quot;name&quot;&gt;名字&lt;/label&gt;&lt;input type=&quot;text&quot; name=&quot;name&quot; id=&quot;name&quot;&gt;</code>for对应id  实现与上一个相同功能</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;fieldset&gt;</span><br><span class="line">   &lt;input&gt;  </span><br><span class="line">&lt;/fieldset&gt;</span><br></pre></td></tr></table></figure>
-
 <p>对表单划分</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;fieldset&gt;</span><br><span class="line">  &lt;legend&gt;基本信息&lt;/legend&gt;</span><br><span class="line">&lt;/fieldset&gt;</span><br></pre></td></tr></table></figure>
-
 <p>lengend作为第一个元素进行说明</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;select name=&quot;sex&quot;&gt;</span><br><span class="line">    &lt;option value=&quot;male&quot;&gt;男&lt;/option&gt;</span><br><span class="line">    &lt;option value=&quot;female&quot;&gt;女&lt;/option&gt;</span><br><span class="line">&lt;/select&gt;</span><br></pre></td></tr></table></figure>
-
 <p>下拉选项框</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;select&gt;</span><br><span class="line">  &lt;optgroup label=&quot;  &quot;&gt;</span><br><span class="line">    &lt;option&gt;   &lt;/option&gt;</span><br><span class="line">    ......</span><br><span class="line">  &lt;/optgroup&gt;</span><br><span class="line">&lt;/select&gt;</span><br></pre></td></tr></table></figure>
-
 <p>optgroup下拉选项框分组</p>
 <h1 id="input元素的属性"><a href="#input元素的属性" class="headerlink" title="input元素的属性"></a>input元素的属性</h1><p><code>&lt;input type=&quot;submit&quot; value=&quot;提交&quot;&gt;</code>实现button功能</p>
-<p>类似的：type&#x3D;”reset”  type&#x3D;”button”</p>
+<p>类似的：type=”reset”  type=”button”</p>
 <p><code>&lt;input type=&quot;radio&quot; name=&quot;sex&quot; value=&quot;male&quot;&gt;男</code></p>
 <p><code>&lt;input type=&quot;radio&quot; name=&quot;sex&quot; value=&quot;female&quot;&gt;</code>女</p>
 <p>单选框</p>
-<p><code>&lt;input type=&quot;checkbox&quot; name=&quot;arr[]&quot; value=&quot;a&quot;&gt;A  </code></p>
+<p><code>&lt;input type=&quot;checkbox&quot; name=&quot;arr[]&quot; value=&quot;a&quot;&gt;A</code></p>
 <p><code>&lt;input type=&quot;checkbox&quot; name=&quot;arr[]&quot; value=&quot;b&quot;&gt;B</code></p>
 <p>复选框</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;input type=&quot;time&quot; name=&quot;time&quot;&gt;时间</span><br><span class="line">&lt;input type=&quot;time&quot; name=&quot;date&quot;&gt;日期</span><br><span class="line">month 年月  week 星期  datetime-local 本地日期和时间</span><br></pre></td></tr></table></figure>
-
 <p>时间和日期</p>
 <p><code>&lt;input type=&quot;search&quot; name=&quot;search&quot;&gt;</code> 搜索框</p>
 <p><code>&lt;input type=&quot;color&quot; name=&quot;color&quot;&gt;</code> 颜色选择框</p>
 <p><code>&lt;input type=&quot;image&quot; src=&quot;  &quot; alt=&quot; &quot;&gt;</code> 图像按钮</p>
 <p><code>&lt;input type=&quot;hidden&quot; value=&quot; &quot; disabled&gt;</code> 隐藏元素</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;form action=&quot;&quot; method=&quot;post&quot; enctype=&quot;multipart/form-data&quot;&gt;</span><br><span class="line">  &lt;input type=&quot;hidden&quot; name=&quot;MAX_FILE_SIZE&quot; value=&quot;1024&quot;&gt;</span><br><span class="line">  &lt;input type=&quot;file&quot; name=&quot;file&quot; accept=&quot;image/*&quot; multiple&gt;</span><br><span class="line">&lt;/form&gt;</span><br></pre></td></tr></table></figure>
-
 <p>上传文件</p>
 <h1 id="限定输入类型"><a href="#限定输入类型" class="headerlink" title="限定输入类型"></a>限定输入类型</h1><p><code>&lt;input type=&quot;number&quot; name=&quot;age&quot;&gt;</code> 限定数字类型</p>
 <p><code>&lt;input type=&quot;number&quot; name=&quot;age&quot; min=&quot;1&quot; max=&quot;100&quot; step=&quot;1&quot;&gt;</code> 限定数字范围和不长</p>
@@ -167,37 +163,25 @@
 <h1 id="输入框的长度"><a href="#输入框的长度" class="headerlink" title="输入框的长度"></a>输入框的长度</h1><p><code>&lt;input type=&quot;number&quot; name=&quot;age&quot; size=&quot;30&quot;&gt;</code></p>
 <h1 id="限制输入字符数量"><a href="#限制输入字符数量" class="headerlink" title="限制输入字符数量"></a>限制输入字符数量</h1><p><code>&lt;input type=&quot;number&quot; name=&quot;age&quot; maxlength=&quot;22&quot;&gt;</code> 最多输入数</p>
 <h1 id="输入框下拉选项"><a href="#输入框下拉选项" class="headerlink" title="输入框下拉选项"></a>输入框下拉选项</h1><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;input type=&quot;text&quot; name=&quot;site&quot; list=&quot;urllist&quot;&gt;</span><br><span class="line">&lt;datalist id=&quot;urllist&quot;&gt;</span><br><span class="line">      &lt;option value=&quot;  &quot;&gt;选项一&lt;/option&gt;</span><br><span class="line">&lt;/datalist&gt;</span><br></pre></td></tr></table></figure>
-
 <h1 id="显示输出"><a href="#显示输出" class="headerlink" title="显示输出"></a>显示输出</h1><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">0&lt;input type=&quot;range&quot; id=&quot;a&quot; value=&quot;50&quot; min=&quot;0&quot; max=&quot;100&quot;&gt;100+</span><br><span class="line">&lt;input type=&quot;number&quot; id=&quot;b&quot; value=&quot;50&quot;&gt;=</span><br><span class="line">&lt;output name=&quot;x&quot; for=&quot;a b&quot;&gt;100&lt;/output&gt;</span><br></pre></td></tr></table></figure>
-
 <p>output输出</p>
 <h1 id="多行文本输入"><a href="#多行文本输入" class="headerlink" title="多行文本输入"></a>多行文本输入</h1><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;textarea name=&quot;say&quot; rows=&quot;5&quot; cols=&quot;30&quot; wrap=&quot;off&quot;&gt;       context   </span><br><span class="line">&lt;/textarea&gt;</span><br></pre></td></tr></table></figure>
-
-<p>wrop&#x3D;”hard” 提交换行符</p>
-<p>worp&#x3D;”off”不会自动换行</p>
-<p>worp&#x3D;”soft”不提交换行符</p>
+<p>wrop=”hard” 提交换行符</p>
+<p>worp=”off”不会自动换行</p>
+<p>worp=”soft”不提交换行符</p>
 <h1 id="网页架构"><a href="#网页架构" class="headerlink" title="网页架构"></a>网页架构</h1><p><code>&lt;section&gt;</code> 全文档</p>
 <p><code>&lt;article&gt;</code> 文章中具体内容</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;section&gt; </span><br><span class="line"> &lt;details open&gt;</span><br><span class="line">   &lt;summary&gt;  &lt;/summary&gt;</span><br><span class="line">   &lt;p&gt;  &lt;/p&gt;</span><br><span class="line">  &lt;/details&gt;</span><br><span class="line"> &lt;/section&gt;</span><br></pre></td></tr></table></figure>
-
 <h1 id="图片映射"><a href="#图片映射" class="headerlink" title="图片映射"></a>图片映射</h1><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;img src=&quot; &quot; alt=&quot; &quot; usemap=&quot;#book&quot;&gt;</span><br><span class="line">&lt;map name=&quot;book&quot;&gt;</span><br><span class="line">  &lt;area shape=&quot;circle&quot; coords=&quot;x,y,radius&quot; alt=&quot; &quot; href=&quot; &quot; target=&quot;_blank&quot;&gt;</span><br><span class="line">  &lt;area shape=&quot;poly&quot; coords=&quot;x,y,x,y,x,y...&quot; alt=&quot; &quot; href=&quot; &quot; target=&quot; &quot;&gt;多边形</span><br><span class="line">  &lt;area shape=&quot;rect&quot; coords=&quot;x,y,x,y&quot; alt=&quot; &quot; href=&quot; &quot; target=&quot;_blank&quot;&gt;矩形</span><br><span class="line">&lt;/map&gt;</span><br></pre></td></tr></table></figure>
-
 <h1 id="图像适配"><a href="#图像适配" class="headerlink" title="图像适配"></a>图像适配</h1><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;picture&gt;</span><br><span class="line"> &lt;source media=&quot;(min-width: 1024px)&quot; srcset=&quot;big.jpg&quot;&gt;</span><br><span class="line"> &lt;source media=&quot;(min-width: 512px)&quot; srcset=&quot;small.jpg&quot;&gt;</span><br><span class="line"> &lt;img src=&quot;normal.jpg&quot; alt=&quot;图片&quot; style=&quot;width:auto;&quot;&gt;</span><br><span class="line">&lt;picture&gt;</span><br></pre></td></tr></table></figure>
-
 <h1 id="插图"><a href="#插图" class="headerlink" title="插图"></a>插图</h1><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;figure&gt;</span><br><span class="line"> &lt;img src=&quot; &quot; alt=&quot; &quot;&gt;</span><br><span class="line"> &lt;figcaption&gt;   &lt;/figcaption&gt;</span><br><span class="line">&lt;/figure&gt;</span><br></pre></td></tr></table></figure>
-
 <h1 id="嵌入视频"><a href="#嵌入视频" class="headerlink" title="嵌入视频"></a>嵌入视频</h1><p><code>&lt;video src=&quot; &quot; width=&quot; &quot; height=&quot; &quot; controls autoplay muted &gt;  &lt;/video&gt;</code></p>
 <p><code>&lt;video src=&quot; &quot; width=&quot; &quot; height=&quot; &quot; controls preload=&quot;auto&quot;&gt;  &lt;/video&gt;</code>    预加载</p>
 <p><code>&lt;video src= &quot; &quot; width=&quot; &quot; heigth=&quot; &quot; controls poster=&quot;....jpg&quot;&gt;   &lt;/video&gt;</code>  封面</p>
 <p><code>&lt;video src=&quot; &quot; width=&quot; &quot; heigth=&quot; &quot; controls loop&gt;</code> 循环</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;video src=&quot; &quot; width=&quot; &quot; controls&gt;</span><br><span class="line"> &lt;track src=&quot; ....vtt&quot; srclang=&quot;zh&quot; label=&quot;中文字幕&quot; kind=&quot;subtitles&quot; default&gt; 添加字幕</span><br><span class="line">&lt;/video&gt;</span><br></pre></td></tr></table></figure>
-
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;video width=&quot; &quot; controls&gt;</span><br><span class="line"> &lt;source src=&quot; &quot; type=&quot;video/mp4&quot;&gt;</span><br><span class="line"> &lt;source src=&quot; &quot; type=&quot;video/ogv&quot;&gt;</span><br><span class="line"> &lt;source src=&quot; &quot; type=&quot;video/webm&quot;&gt;</span><br><span class="line"> 备用视频</span><br><span class="line">&lt;/video&gt;</span><br></pre></td></tr></table></figure>
-
-
-
 <h1 id="嵌入音频"><a href="#嵌入音频" class="headerlink" title="嵌入音频"></a>嵌入音频</h1><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;audio src=&quot; &quot; controls&gt;</span><br><span class="line"> </span><br><span class="line">&lt;/audio&gt;</span><br></pre></td></tr></table></figure>
-
 ]]></content>
       <categories>
         <category>web front</category>
@@ -205,6 +189,20 @@
       <tags>
         <tag>html</tag>
         <tag>css</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>BolgBuild</title>
+    <url>/BolgBuild.html</url>
+    <content><![CDATA[<h1 id="Hexo-Github搭建个人博客"><a href="#Hexo-Github搭建个人博客" class="headerlink" title="Hexo+Github搭建个人博客"></a>Hexo+Github搭建个人博客</h1><p><a href="https://www.bilibili.com/video/BV1mU4y1j72n?spm_id_from=333.337.search-card.all.click&amp;vd_source=ff3c4b00386234806258d66498119762">搭建博客视频教程</a></p>
+<h1 id="对个人博客进行美化和配置"><a href="#对个人博客进行美化和配置" class="headerlink" title="对个人博客进行美化和配置"></a>对个人博客进行美化和配置</h1><p><a href="https://www.bilibili.com/video/BV16W411t7mq?spm_id_from=333.337.search-card.all.click&amp;vd_source=ff3c4b00386234806258d66498119762">美化配置博客视频教程</a></p>
+]]></content>
+      <categories>
+        <category>Bolg</category>
+      </categories>
+      <tags>
+        <tag>BolgBuild</tag>
+        <tag>BolgDeploy</tag>
       </tags>
   </entry>
   <entry>
@@ -218,20 +216,6 @@
         <tag>R-CNN</tag>
         <tag>Fast R-CNN</tag>
         <tag>Faster R-CNN</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>BolgBuild</title>
-    <url>/BolgBuild.html</url>
-    <content><![CDATA[<h1 id="Hexo-Github搭建个人博客"><a href="#Hexo-Github搭建个人博客" class="headerlink" title="Hexo+Github搭建个人博客"></a>Hexo+Github搭建个人博客</h1><p><a href="https://www.bilibili.com/video/BV1mU4y1j72n?spm_id_from=333.337.search-card.all.click&vd_source=ff3c4b00386234806258d66498119762">搭建博客视频教程</a></p>
-<h1 id="对个人博客进行美化和配置"><a href="#对个人博客进行美化和配置" class="headerlink" title="对个人博客进行美化和配置"></a>对个人博客进行美化和配置</h1><p><a href="https://www.bilibili.com/video/BV16W411t7mq?spm_id_from=333.337.search-card.all.click&vd_source=ff3c4b00386234806258d66498119762">美化配置博客视频教程</a></p>
-]]></content>
-      <categories>
-        <category>Bolg</category>
-      </categories>
-      <tags>
-        <tag>BolgBuild</tag>
-        <tag>BolgDeploy</tag>
       </tags>
   </entry>
   <entry>
@@ -250,21 +234,19 @@
 <p><a href="https://github.com/ZhaoYongrui">My github site</a></p>
 <h1 id="插入图片"><a href="#插入图片" class="headerlink" title="插入图片"></a>插入图片</h1><p>!后跟[],接(),[]中编写文字，()中填充图片网址</p>
 <p>eg:</p>
-<img src="https://pic1.zhimg.com/v2-e0b9732fa27c927a77ccb5587932e240_l.jpg?source=172ae18b" alt="Mickey Mouse" style="zoom:25%;" />
-
+<p><img src="https://pic1.zhimg.com/v2-e0b9732fa27c927a77ccb5587932e240_l.jpg?source=172ae18b" alt="Mickey Mouse" style="zoom:25%;" /></p>
 <h1 id="斜体字"><a href="#斜体字" class="headerlink" title="斜体字"></a>斜体字</h1><p>两个*中间的字为斜体</p>
 <p>eg：</p>
 <p><em>斜体</em></p>
 <h1 id="粗体字"><a href="#粗体字" class="headerlink" title="粗体字"></a>粗体字</h1><p>一对**中间为粗体字</p>
 <p>eg:</p>
 <p><strong>粗体</strong></p>
-<h1 id="单行代码"><a href="#单行代码" class="headerlink" title="单行代码"></a>单行代码</h1><p>两个&#96;中间可写一行代码</p>
+<h1 id="单行代码"><a href="#单行代码" class="headerlink" title="单行代码"></a>单行代码</h1><p>两个`中间可写一行代码</p>
 <p>eg:</p>
 <p><code>&lt;html&gt;&lt;/html&gt;</code></p>
-<h1 id="多行代码"><a href="#多行代码" class="headerlink" title="多行代码"></a>多行代码</h1><p>三个&#96;下面可写多行代码</p>
+<h1 id="多行代码"><a href="#多行代码" class="headerlink" title="多行代码"></a>多行代码</h1><p>三个`下面可写多行代码</p>
 <p>eg:</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;html&gt;</span><br><span class="line">     &lt;head&gt;</span><br><span class="line">          &lt;title&gt;title&lt;/title&gt;</span><br><span class="line">     &lt;/head&gt;</span><br><span class="line">     &lt;body&gt;</span><br><span class="line">          body</span><br><span class="line">      &lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
-
 <h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><p>一个&gt;后面的内容为引用</p>
 <p>eg:</p>
 <blockquote>
@@ -280,20 +262,6 @@
       </categories>
       <tags>
         <tag>BolgWrite</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>MachineLearning</title>
-    <url>/MachineLearning.html</url>
-    <content><![CDATA[<h1 id="感知机"><a href="#感知机" class="headerlink" title="感知机"></a>感知机</h1><p>$$<br>f(x)&#x3D;sign(w · x+b)<br>$$</p>
-<p>$$<br>sign(x)&#x3D;\left{<br>\begin{matrix}<br> +1, x\geqslant0 \<br> -1，x&lt;0<br>\end{matrix}<br>\right.</p>
-<p>$$</p>
-<h1 id="K近邻法"><a href="#K近邻法" class="headerlink" title="K近邻法"></a>K近邻法</h1><p>三要素：距离度量、k值的选择、分类决策规则</p>
-<p>构造kd树、利用kd树进行最近邻搜索</p>
-]]></content>
-      <tags>
-        <tag>AI</tag>
-        <tag>ML</tag>
       </tags>
   </entry>
 </search>
