@@ -274,7 +274,39 @@ sign(x)=\left\{
   <entry>
     <title>JavaBasics</title>
     <url>/JavaBasics.html</url>
-    <content><![CDATA[]]></content>
+    <content><![CDATA[<h1 id="转义字符"><a href="#转义字符" class="headerlink" title="转义字符"></a>转义字符</h1><ul>
+<li>\t：一个制表位。实现对齐</li>
+<li>\n：换行符</li>
+<li>\\：两个斜杠输出一个斜杠</li>
+<li>\“：一个”</li>
+<li>\r：一个回车</li>
+</ul>
+<h1 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h1><p>/** 注释文字</p>
+<p> *注释文字</p>
+<p> */  文档注释</p>
+<h1 id="代码规范"><a href="#代码规范" class="headerlink" title="代码规范"></a>代码规范</h1><ul>
+<li><p>Tab：整体向右</p>
+</li>
+<li><p>Shift+Tab：整体向左</p>
+</li>
+<li>运算符左右加一个空格</li>
+<li>行宽度不超过80字符</li>
+<li>行尾风格</li>
+</ul>
+<h1 id="DOS命令"><a href="#DOS命令" class="headerlink" title="DOS命令"></a>DOS命令</h1><ul>
+<li>md：创建文件夹</li>
+<li>rd：删除文件夹</li>
+<li>dir：查看目录内容</li>
+<li>tree：查看指定目录下的子目录</li>
+<li>cls：清屏</li>
+<li>exit：退出</li>
+<li>copy：拷贝文件</li>
+<li>del：删除文件</li>
+<li>echo：输入内容到文件</li>
+<li>type：输入空文件</li>
+<li>move：剪切</li>
+</ul>
+]]></content>
       <tags>
         <tag>JAVA</tag>
       </tags>
