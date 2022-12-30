@@ -10,8 +10,15 @@ sign(x)=\left\{
  +1, x\geqslant0 \\
  -1,x<0
 \end{matrix}
-\right.</script><h1 id="K近邻法"><a href="#K近邻法" class="headerlink" title="K近邻法"></a>K近邻法</h1><p>三要素：距离度量、k值的选择、分类决策规则</p>
+\right.</script><p>分类</p>
+<h1 id="K近邻法"><a href="#K近邻法" class="headerlink" title="K近邻法"></a>K近邻法</h1><p>三要素：距离度量、k值的选择、分类决策规则</p>
 <p>构造kd树、利用kd树进行最近邻搜索</p>
+<p>回归、分类</p>
+<h1 id="朴素贝叶斯法"><a href="#朴素贝叶斯法" class="headerlink" title="朴素贝叶斯法"></a>朴素贝叶斯法</h1><p>分类</p>
+<p>先验概率、条件概率、后验概率</p>
+<p>联合概率分布</p>
+<h1 id="决策树"><a href="#决策树" class="headerlink" title="决策树"></a>决策树</h1><p>回归、分类</p>
+<p>特征选择、信息增益、信息增益比、经验条件熵、三种预剪枝方法、五种后剪枝方法、CART算法（基尼指数）</p>
 ]]></content>
       <tags>
         <tag>ML</tag>
