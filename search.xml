@@ -372,6 +372,11 @@ sign(x)=\left\{
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">byte</span> <span class="variable">b</span> <span class="operator">=</span> <span class="number">3</span>; </span><br><span class="line">b +=<span class="number">2</span>;<span class="comment">//等价b = (byte)(b + 2) </span></span><br><span class="line">b++; <span class="comment">//等价b = (byte)(b + 1) </span></span><br><span class="line">b = b + <span class="number">2</span>;<span class="comment">//编译报错 </span></span><br></pre></td></tr></table></figure>
 </li>
 </ol>
+<h1 id="switch分支结构"><a href="#switch分支结构" class="headerlink" title="switch分支结构"></a>switch分支结构</h1><p>case后面没有break会执行下一个case的语句块（穿透）</p>
+<p>switch（表达式）中表达式的返回值必须是：（byte,short,int,char,enum,String），不能是double</p>
+<p>case子句中的值必须是常量</p>
+<p>default子句可有可无</p>
+<h1 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h1><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">int</span>[] arr1 = &#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>&#125;;</span><br><span class="line"></span><br><span class="line"><span class="type">int</span>[] arr2 = arr1;<span class="comment">//地址拷贝</span></span><br><span class="line">arr2[<span class="number">0</span>] = <span class="number">10</span>;<span class="comment">//会影响arr1[0]的值，修改为10</span></span><br></pre></td></tr></table></figure>
 ]]></content>
       <tags>
         <tag>JAVA</tag>
