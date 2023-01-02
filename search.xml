@@ -376,7 +376,15 @@ sign(x)=\left\{
 <p>switch（表达式）中表达式的返回值必须是：（byte,short,int,char,enum,String），不能是double</p>
 <p>case子句中的值必须是常量</p>
 <p>default子句可有可无</p>
-<h1 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h1><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">int</span>[] arr1 = &#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>&#125;;</span><br><span class="line"></span><br><span class="line"><span class="type">int</span>[] arr2 = arr1;<span class="comment">//地址拷贝</span></span><br><span class="line">arr2[<span class="number">0</span>] = <span class="number">10</span>;<span class="comment">//会影响arr1[0]的值，修改为10</span></span><br></pre></td></tr></table></figure>
+<h1 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h1><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">int</span>[] arr1 = &#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>&#125;;</span><br><span class="line"></span><br><span class="line"><span class="type">int</span>[] arr2 = arr1;<span class="comment">//地址拷贝</span></span><br><span class="line">arr2[<span class="number">0</span>] = <span class="number">10</span>;<span class="comment">//会影响arr1[0]的值，修改为10</span></span><br><span class="line"><span class="type">int</span>[] arr3[] = <span class="keyword">new</span> <span class="title class_">int</span>[<span class="number">10</span>][];<span class="comment">//二维数组的一种声明方式</span></span><br><span class="line">String[] strs = <span class="keyword">new</span> <span class="title class_">String</span>[]&#123;<span class="string">&quot;jahd&quot;</span>,<span class="string">&quot;jhds&quot;</span>&#125;;<span class="comment">//正确</span></span><br><span class="line">String[] strs = <span class="keyword">new</span> <span class="title class_">String</span>[<span class="number">2</span>]&#123;<span class="string">&quot;jahd&quot;</span>,<span class="string">&quot;jhds&quot;</span>&#125;;<span class="comment">//错误</span></span><br></pre></td></tr></table></figure>
+<h1 id="排序"><a href="#排序" class="headerlink" title="排序"></a>排序</h1><ol>
+<li>内部排序：将需要处理的所有数据都加载到内部存储器中进行排序（交换式排序法、选择式排序法、插入式排序法）</li>
+<li>外部排序：数据量过大、无法全部加载到内存中，需要借助外部存储进行排序（合并排序法、直接合并排序法）</li>
+</ol>
+<h1 id="查找"><a href="#查找" class="headerlink" title="查找"></a>查找</h1><ol>
+<li>顺序查找</li>
+<li>二分查找</li>
+</ol>
 ]]></content>
       <tags>
         <tag>JAVA</tag>
