@@ -283,12 +283,6 @@ sign(x)=\left\{
       </tags>
   </entry>
   <entry>
-    <title>ss</title>
-    <url>/ss.html</url>
-    <content><![CDATA[<p><img src=".\2023-01-04-ss\对象内存布局.png" alt="ss"></p>
-]]></content>
-  </entry>
-  <entry>
     <title>JavaBasics</title>
     <url>/JavaBasics.html</url>
     <content><![CDATA[<h1 id="转义字符"><a href="#转义字符" class="headerlink" title="转义字符"></a>转义字符</h1><ul>
