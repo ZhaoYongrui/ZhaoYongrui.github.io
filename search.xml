@@ -26,6 +26,10 @@ sign(x)=\left\{
 <h1 id="支持向量机"><a href="#支持向量机" class="headerlink" title="支持向量机"></a>支持向量机</h1><p>二类分类模型</p>
 <p>线性可分支持向量机、线性支持向量机、非线性支持向量机</p>
 <p>硬间隔、软间隔、合页损失、核函数、SMO算法</p>
+<h1 id="提升方法AdaBoost算法"><a href="#提升方法AdaBoost算法" class="headerlink" title="提升方法AdaBoost算法"></a>提升方法AdaBoost算法</h1><p>分类</p>
+<p>弱分类器、强分类器</p>
+<p>同质集成、异质集成</p>
+<p>前向分布算法、可加模型、提升树、梯度提升</p>
 ]]></content>
       <tags>
         <tag>ML</tag>
@@ -385,6 +389,7 @@ sign(x)=\left\{
 <li>顺序查找</li>
 <li>二分查找</li>
 </ol>
+<h1 id="对象内存布局"><a href="#对象内存布局" class="headerlink" title="对象内存布局"></a>对象内存布局</h1><p><img src="E:\blog\source\_posts\img\对象内存布局.png" alt="对象内存布局"></p>
 ]]></content>
       <tags>
         <tag>JAVA</tag>
