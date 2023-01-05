@@ -393,6 +393,7 @@ sign(x)=\left\{
 <li>二分查找</li>
 </ol>
 <h1 id="对象内存布局"><a href="#对象内存布局" class="headerlink" title="对象内存布局"></a>对象内存布局</h1><p><img src=".\JavaBasics\对象内存布局.png" alt="对象内存布局"></p>
+<h1 id="方法调用机制"><a href="#方法调用机制" class="headerlink" title="方法调用机制"></a>方法调用机制</h1><p><img src=".\JavaBasics\方法调用机制.png" alt="方法调用机制"></p>
 ]]></content>
       <tags>
         <tag>JAVA</tag>
