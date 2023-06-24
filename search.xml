@@ -398,9 +398,60 @@ sign(x)=\left\{
 <p><img src=".\JavaBasics\成员方法传参机制.png" alt="成员方法传参机制"></p>
 <p>引用数据类型传递的是地址（传递的也是值，但是值是地址），可以通过形参影响实参！</p>
 <p><img src=".\JavaBasics\引用数据类型传参机制.png" alt="引用数据类型传参机制"></p>
+<h1 id="可变参数"><a href="#可变参数" class="headerlink" title="可变参数"></a>可变参数</h1><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">void</span> method（<span class="type">int</span>... nums）&#123;&#125;</span><br><span class="line"><span class="comment">//可变参数，nums可以当作数组使用,可变参数的实参可以是数组，可变参数可以和普通类型的参数一起放在形参列表，但必须保证可变参数在最后，一个形参列表中只能出现一个可变参数</span></span><br></pre></td></tr></table></figure>
+<h1 id="作用域"><a href="#作用域" class="headerlink" title="作用域"></a>作用域</h1><ul>
+<li>全局变量可以不赋值直接使用，因为有默认值，局部变量没有默认值，必须赋值之后才可以使用</li>
+<li>全局变量和局部变量可以重名，访问时遵循就近原则</li>
+</ul>
+<h1 id="我的IDEA快捷键"><a href="#我的IDEA快捷键" class="headerlink" title="我的IDEA快捷键"></a>我的IDEA快捷键</h1><ol>
+<li>删除当前行：Ctrl + D</li>
+<li>复制当前行：Ctrl + Alt + D</li>
+<li>注释：Ctrl + /、Ctrl + Shift + /</li>
+<li>代码格式化：Ctrl  + Tab</li>
+<li>快速运行程序：Ctrl + R</li>
+<li>类型层次结构：Alt + H</li>
+<li>方法层次结构：Alt + F</li>
+<li>调用层次结构：Alt + G</li>
+<li>自动分配变量名：.var</li>
+</ol>
+<h1 id="Java-IDEA模板"><a href="#Java-IDEA模板" class="headerlink" title="Java_IDEA模板"></a>Java_IDEA模板</h1><ul>
+<li>main</li>
+<li>fori</li>
+<li>sout</li>
+</ul>
+<h1 id="继承"><a href="#继承" class="headerlink" title="继承"></a>继承</h1><ul>
+<li>当创建子类对象时，不管使用子类的哪个构造器，默认情况下总会去调用父类的无参构造器，如果父类没有提供无 参构造器，则必须在子类的构造器中用 super 去指定使用父类的哪个构造器完成对父类的初始化工作，否则，编译不会通过</li>
+<li>super() 和 this() 都只能放在构造器第一行，因此这两个方法不能共存在一个构造器</li>
+</ul>
+<h1 id="多态"><a href="#多态" class="headerlink" title="多态"></a>多态</h1><ul>
+<li>一个对象的编译类型和运行类型可以不一致</li>
+<li>编译类型在定义对象时，就确定了，不能改变</li>
+<li>运行类型是可以变化的</li>
+<li>编译类型看定义时=后的左边，运行类型看=号的右边</li>
+</ul>
+<h1 id="动态绑定机制"><a href="#动态绑定机制" class="headerlink" title="动态绑定机制"></a>动态绑定机制</h1><ol>
+<li>当调用对象方法的时候，该方法会和该对象的内存地址/运行类型绑定</li>
+<li>当调用对象属性时，没有动态绑定机制，哪里声明，哪里使用</li>
+</ol>
+<h1 id="和equals-对比"><a href="#和equals-对比" class="headerlink" title="==和equals()对比"></a>==和equals()对比</h1><ol>
+<li>==：既可以判断基本类型，又可以判断引用类型</li>
+<li>==：如果判断基本类型，判断的是值是否相等</li>
+<li>==：如果判断引用类型，判断的是地址是否相等，即判定是不是同一个对象</li>
+<li>equals()：是Object类中的方法，只能判断引用类型</li>
+<li>equals():默认判断的是地址是否相等，子类中往往重写该方法，用于判断内容是否相等，比如Integer，String</li>
+</ol>
 ]]></content>
       <tags>
         <tag>JAVA</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>YoungSouls</title>
+    <url>/YoungSouls.html</url>
+    <content><![CDATA[<h1 id="Young-Souls"><a href="#Young-Souls" class="headerlink" title="Young Souls"></a>Young Souls</h1><p>We’re walking through the lands<br>我们穿行在大街小巷<br>Pure souls and dreams ahead<br>带着年轻的灵魂和纯粹的梦想<br>Romantic adventurers, we seek to discover<br>我们为寻找浪漫的冒险出发<br>What the world has to hide<br>万物亟待探索<br>A thousand miles away<br>在千万里外的地方<br>We’ve traveled to, so for to play<br>我们四处游走，浪迹天涯<br>We’ve put our fears aside<br>一路笑语欢声<br>A thousand miles away<br>在离家乡千万里的地方<br>We’ve traveled to play<br>我们四处游走，浪迹天涯<br>We’ve come to sing out loud<br>我们大声歌唱<br>A thousand miles away from home<br>在离家乡千万里的地方<br>We are the young souls and proud to be so, every day<br>我们日夜为年轻的灵魂放声歌唱<br>Tell them<br>告诉人们<br>We’re on the way<br>我们在路上<br>We won’t stop growing everyday<br>从未停止成长</p>
+]]></content>
+      <tags>
+        <tag>English Poetry</tag>
       </tags>
   </entry>
 </search>

@@ -36,7 +36,7 @@
 <meta property="og:image" content="http://zyrblog.com/JavaBasics/成员方法传参机制.png">
 <meta property="og:image" content="http://zyrblog.com/JavaBasics/引用数据类型传参机制.png">
 <meta property="article:published_time" content="2023-01-04T10:30:26.000Z">
-<meta property="article:modified_time" content="2023-01-06T14:38:56.450Z">
+<meta property="article:modified_time" content="2023-01-12T10:56:22.669Z">
 <meta property="article:author" content="Zhao Yongrui">
 <meta property="article:tag" content="JAVA">
 <meta name="twitter:card" content="summary">
@@ -248,7 +248,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2023-01-06 22:38:56" itemprop="dateModified" datetime="2023-01-06T22:38:56+08:00">2023-01-06</time>
+                <time title="修改时间：2023-01-12 18:56:22" itemprop="dateModified" datetime="2023-01-12T18:56:22+08:00">2023-01-12</time>
               </span>
 
           
@@ -383,6 +383,48 @@
 <p><img src=".\JavaBasics\成员方法传参机制.png" alt="成员方法传参机制"></p>
 <p>引用数据类型传递的是地址（传递的也是值，但是值是地址），可以通过形参影响实参！</p>
 <p><img src=".\JavaBasics\引用数据类型传参机制.png" alt="引用数据类型传参机制"></p>
+<h1 id="可变参数"><a href="#可变参数" class="headerlink" title="可变参数"></a>可变参数</h1><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">void</span> method（<span class="type">int</span>... nums）&#123;&#125;</span><br><span class="line"><span class="comment">//可变参数，nums可以当作数组使用,可变参数的实参可以是数组，可变参数可以和普通类型的参数一起放在形参列表，但必须保证可变参数在最后，一个形参列表中只能出现一个可变参数</span></span><br></pre></td></tr></table></figure>
+<h1 id="作用域"><a href="#作用域" class="headerlink" title="作用域"></a>作用域</h1><ul>
+<li>全局变量可以不赋值直接使用，因为有默认值，局部变量没有默认值，必须赋值之后才可以使用</li>
+<li>全局变量和局部变量可以重名，访问时遵循就近原则</li>
+</ul>
+<h1 id="我的IDEA快捷键"><a href="#我的IDEA快捷键" class="headerlink" title="我的IDEA快捷键"></a>我的IDEA快捷键</h1><ol>
+<li>删除当前行：Ctrl + D</li>
+<li>复制当前行：Ctrl + Alt + D</li>
+<li>注释：Ctrl + /、Ctrl + Shift + /</li>
+<li>代码格式化：Ctrl  + Tab</li>
+<li>快速运行程序：Ctrl + R</li>
+<li>类型层次结构：Alt + H</li>
+<li>方法层次结构：Alt + F</li>
+<li>调用层次结构：Alt + G</li>
+<li>自动分配变量名：.var</li>
+</ol>
+<h1 id="Java-IDEA模板"><a href="#Java-IDEA模板" class="headerlink" title="Java_IDEA模板"></a>Java_IDEA模板</h1><ul>
+<li>main</li>
+<li>fori</li>
+<li>sout</li>
+</ul>
+<h1 id="继承"><a href="#继承" class="headerlink" title="继承"></a>继承</h1><ul>
+<li>当创建子类对象时，不管使用子类的哪个构造器，默认情况下总会去调用父类的无参构造器，如果父类没有提供无 参构造器，则必须在子类的构造器中用 super 去指定使用父类的哪个构造器完成对父类的初始化工作，否则，编译不会通过</li>
+<li>super() 和 this() 都只能放在构造器第一行，因此这两个方法不能共存在一个构造器</li>
+</ul>
+<h1 id="多态"><a href="#多态" class="headerlink" title="多态"></a>多态</h1><ul>
+<li>一个对象的编译类型和运行类型可以不一致</li>
+<li>编译类型在定义对象时，就确定了，不能改变</li>
+<li>运行类型是可以变化的</li>
+<li>编译类型看定义时=后的左边，运行类型看=号的右边</li>
+</ul>
+<h1 id="动态绑定机制"><a href="#动态绑定机制" class="headerlink" title="动态绑定机制"></a>动态绑定机制</h1><ol>
+<li>当调用对象方法的时候，该方法会和该对象的内存地址/运行类型绑定</li>
+<li>当调用对象属性时，没有动态绑定机制，哪里声明，哪里使用</li>
+</ol>
+<h1 id="和equals-对比"><a href="#和equals-对比" class="headerlink" title="==和equals()对比"></a>==和equals()对比</h1><ol>
+<li>==：既可以判断基本类型，又可以判断引用类型</li>
+<li>==：如果判断基本类型，判断的是值是否相等</li>
+<li>==：如果判断引用类型，判断的是地址是否相等，即判定是不是同一个对象</li>
+<li>equals()：是Object类中的方法，只能判断引用类型</li>
+<li>equals():默认判断的是地址是否相等，子类中往往重写该方法，用于判断内容是否相等，比如Integer，String</li>
+</ol>
 
     </div>
 
@@ -404,7 +446,10 @@
     <a href="/MachineLearning.html" rel="prev" title="MachineLearning">
       <i class="fa fa-chevron-left"></i> MachineLearning
     </a></div>
-      <div class="post-nav-item"></div>
+      <div class="post-nav-item">
+    <a href="/YoungSouls.html" rel="next" title="YoungSouls">
+      YoungSouls <i class="fa fa-chevron-right"></i>
+    </a></div>
     </div>
       </footer>
     
@@ -463,7 +508,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%BD%AC%E4%B9%89%E5%AD%97%E7%AC%A6"><span class="nav-number">1.</span> <span class="nav-text">转义字符</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%B3%A8%E9%87%8A"><span class="nav-number">2.</span> <span class="nav-text">注释</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BB%A3%E7%A0%81%E8%A7%84%E8%8C%83"><span class="nav-number">3.</span> <span class="nav-text">代码规范</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#DOS%E5%91%BD%E4%BB%A4"><span class="nav-number">4.</span> <span class="nav-text">DOS命令</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%8F%B7%E4%BD%BF%E7%94%A8%E5%8E%9F%E5%88%99"><span class="nav-number">5.</span> <span class="nav-text">+号使用原则</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B"><span class="nav-number">6.</span> <span class="nav-text">数据类型</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Java-API%E6%96%87%E6%A1%A3"><span class="nav-number">7.</span> <span class="nav-text">Java API文档</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="nav-number">8.</span> <span class="nav-text">运算符</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#switch%E5%88%86%E6%94%AF%E7%BB%93%E6%9E%84"><span class="nav-number">9.</span> <span class="nav-text">switch分支结构</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%95%B0%E7%BB%84"><span class="nav-number">10.</span> <span class="nav-text">数组</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%8E%92%E5%BA%8F"><span class="nav-number">11.</span> <span class="nav-text">排序</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%9F%A5%E6%89%BE"><span class="nav-number">12.</span> <span class="nav-text">查找</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%AF%B9%E8%B1%A1%E5%86%85%E5%AD%98%E5%B8%83%E5%B1%80"><span class="nav-number">13.</span> <span class="nav-text">对象内存布局</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%96%B9%E6%B3%95%E8%B0%83%E7%94%A8%E6%9C%BA%E5%88%B6"><span class="nav-number">14.</span> <span class="nav-text">方法调用机制</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%88%90%E5%91%98%E6%96%B9%E6%B3%95%E4%BC%A0%E5%8F%82%E6%9C%BA%E5%88%B6"><span class="nav-number">15.</span> <span class="nav-text">成员方法传参机制</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%BD%AC%E4%B9%89%E5%AD%97%E7%AC%A6"><span class="nav-number">1.</span> <span class="nav-text">转义字符</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%B3%A8%E9%87%8A"><span class="nav-number">2.</span> <span class="nav-text">注释</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BB%A3%E7%A0%81%E8%A7%84%E8%8C%83"><span class="nav-number">3.</span> <span class="nav-text">代码规范</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#DOS%E5%91%BD%E4%BB%A4"><span class="nav-number">4.</span> <span class="nav-text">DOS命令</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%8F%B7%E4%BD%BF%E7%94%A8%E5%8E%9F%E5%88%99"><span class="nav-number">5.</span> <span class="nav-text">+号使用原则</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B"><span class="nav-number">6.</span> <span class="nav-text">数据类型</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Java-API%E6%96%87%E6%A1%A3"><span class="nav-number">7.</span> <span class="nav-text">Java API文档</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="nav-number">8.</span> <span class="nav-text">运算符</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#switch%E5%88%86%E6%94%AF%E7%BB%93%E6%9E%84"><span class="nav-number">9.</span> <span class="nav-text">switch分支结构</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%95%B0%E7%BB%84"><span class="nav-number">10.</span> <span class="nav-text">数组</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%8E%92%E5%BA%8F"><span class="nav-number">11.</span> <span class="nav-text">排序</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%9F%A5%E6%89%BE"><span class="nav-number">12.</span> <span class="nav-text">查找</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%AF%B9%E8%B1%A1%E5%86%85%E5%AD%98%E5%B8%83%E5%B1%80"><span class="nav-number">13.</span> <span class="nav-text">对象内存布局</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%96%B9%E6%B3%95%E8%B0%83%E7%94%A8%E6%9C%BA%E5%88%B6"><span class="nav-number">14.</span> <span class="nav-text">方法调用机制</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%88%90%E5%91%98%E6%96%B9%E6%B3%95%E4%BC%A0%E5%8F%82%E6%9C%BA%E5%88%B6"><span class="nav-number">15.</span> <span class="nav-text">成员方法传参机制</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%8F%AF%E5%8F%98%E5%8F%82%E6%95%B0"><span class="nav-number">16.</span> <span class="nav-text">可变参数</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BD%9C%E7%94%A8%E5%9F%9F"><span class="nav-number">17.</span> <span class="nav-text">作用域</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%88%91%E7%9A%84IDEA%E5%BF%AB%E6%8D%B7%E9%94%AE"><span class="nav-number">18.</span> <span class="nav-text">我的IDEA快捷键</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Java-IDEA%E6%A8%A1%E6%9D%BF"><span class="nav-number">19.</span> <span class="nav-text">Java_IDEA模板</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%BB%A7%E6%89%BF"><span class="nav-number">20.</span> <span class="nav-text">继承</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%A4%9A%E6%80%81"><span class="nav-number">21.</span> <span class="nav-text">多态</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%8A%A8%E6%80%81%E7%BB%91%E5%AE%9A%E6%9C%BA%E5%88%B6"><span class="nav-number">22.</span> <span class="nav-text">动态绑定机制</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%92%8Cequals-%E5%AF%B9%E6%AF%94"><span class="nav-number">23.</span> <span class="nav-text">&#x3D;&#x3D;和equals()对比</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -479,7 +524,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">6</span>
+          <span class="site-state-item-count">7</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -492,7 +537,7 @@
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">11</span>
+        <span class="site-state-item-count">12</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
